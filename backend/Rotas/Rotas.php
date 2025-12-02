@@ -10,6 +10,8 @@ class Rotas
             "GET" => [
                 "/" => "Admin\DashboardController@index",
                 "/usuarios" => "UsuarioController@index",
+                '/api/usuarios/{pagina}' => 'APIUsuarioController@getUsuarios',
+                '/api/usuarios' => 'APIUsuarioController@getUsuarios',
                 "/usuario/criar" => "UsuarioController@viewCriarUsuarios",
                 "/usuario/listar" => "UsuarioController@viewListarUsuarios",
                 "/usuario/listar/{pagina}" => "UsuarioController@viewListarUsuarios",
@@ -29,6 +31,7 @@ class Rotas
                 '/servico/excluir/{id}' => 'ServicoController@viewExcluirServico',
 
                 '/api/produtos' => 'PublicApiController@getProdutos',
+                
             ],
             
             "POST" => [
