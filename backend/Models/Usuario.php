@@ -117,7 +117,7 @@ class Usuario{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     // metodo de inserir usuario create
-    function inseriUsuario(
+    function inserirUsuario(
         $nome, 
         $email, 
         $senha, 
