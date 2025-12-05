@@ -1,1 +1,3 @@
 vendor
+Mail.php
+backend/Database/Config.php
